@@ -1,0 +1,90 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+	background-position:top;
+   //  z-index: -1;
+   
+
+}
+#logo{
+   // background-color: red;
+	margin:auto;
+	margin-bottom:5%;
+}
+
+#logo_pic{
+	height:100px;
+	width:150px;
+	margin:auto;
+	}
+
+#logo:hover{
+    /*background-color: blue;
+    transition-duration: .5s;
+ transition-timing-function:linear;*/
+}
+#logo-text{
+    font-family: impact;
+    font-style: italic;
+    font-size: 30px;
+    }
+	
+	#clock_CC{
+		background-color: #55B5E4;
+        //z-index:1;
+		//padding-bottom:10px;
+         bottom:0;
+		 opacity:.5;
+            position:absolute;
+			width:100%;
+			display:none;
+			
+			}
+	#upside_button{
+		height:40px;
+		width:60px;
+		position:absolute;
+		bottom:0;
+		z-index:1;
+		margin-left:47%;
+		
+		}
+	#upside_button:hover + #clock_CC{
+		display:block;
+		}
+		
+		#clock_CC:hover{
+			display:block;
+			}
+		
+	input{
+margin:auto;	
+//background-color:red;
+border-radius:5px;
+width:150px;
+height:100px;
+background-image:url(Fap%20logo.png);
+}
+/*#london_clock{
+	//align-content:flex-end;
+	position:absolute;
+	bottom:0;
+	margin-top:40px;
+	//background-color:red;
+    //height:40px;
+	
+	}
+	*/
+	#CC_claim{
+ position:absolute;
+	right:0;
+	}
+			
+		
+  #CC_logo{
+	 
+	  position:absolute;
+	 right:0;
+	  }
+	  .
+	  

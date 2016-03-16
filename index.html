@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flip A Coin</title>
+    <link rel="stylesheet" type="text/css" href="style_coin.css">
+    
+  
+    
+    </head>
+    
+    
+    <body>
+    <div id="logo" style="height:40px;width:300px;border-radius:50px;text-align:center;">
+       <!-- <p id="logo-text">Flip a pound</p> -->     
+       <!--<img id=logo_pic src="Fap logo.png"></img>-->  
+   <img id="img" src="img0.png"/>
+    
+   <input type="image" src="Fap logo.png" onClick="foo(this)" autodisable="self" >
+   </div>
+    
+   <img id="upside_button" src="bottom upside button.png"/>
+   
+    
+   
+   <div id="clock_CC">
+   
+   <div id="london_clock" style="margin: 15px 0px 0px; display: inline-block; text-align: center; width: 96px;"><noscript><div style="display: inline-block; padding: 2px 4px; margin: 0px 0px 5px; border: 1px solid rgb(204, 204, 204); text-align: center; background-color: transparent;"><<!----><a style="text-decoration: none; font-size: 13px; color: rgb(0, 0, 0);" href="http://localtimes.info/Europe/United_Kingdom/London/"><img style="visibility:50%; opacity:0.1;" src="http://localtimes.info/images/countries/gb.png"="" border=0="" style="border:0;margin:0;padding:0"=""> London</a></div></noscript><script src="http://localtimes.info/clock.php?continent=Europe&country=United Kingdom&city=London&cp1_Hex=000000&cp2_Hex=FFFFFF&cp3_Hex=a03235&fwdt=96&ham=0&hbg=1&hfg=1&sid=0&mon=0&wek=0&wkf=0&sep=0&widget_number=119" type="text/javascript"></script>
+   </div>
+  
+ 
+
+   
+   <div>
+   
+   
+    <div id="CC_claim"style="z-index:1;position:relative;">
+     <a id="CC_logo" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+   <div > <br />Some works are licensed under a <a  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+   </div>
+   </div>
+   </div>
+  </div> 
+   
+  
+
+
+   
+   
+      <script type="text/javascript">
+  
+  
+    var images = new Array()
+images[0] = "img0.png";
+images[1] = "img1.png";
+images[2] = "img2.png";
+images[3] = "img3.png";
+images[4] = "img4.png";
+images[5] = "img5.png";
+images[6] = "img6.png";
+images[7] = "img7.png";
+images[8] = "img8.png";
+images[9] = "img9.png";
+images[10] = "img10.png";
+images[11] = "img11.png";
+images[12] = "img12.png";
+images[13] = "img13.png";
+images[14] = "img14.png";
+images[15] = "img15.png";
+images[16] = "img16.png";
+images[17] = "img17.png";
+images[18] = "img18.png";
+images[19] = "img19.png";
+images[20] = "img20.png";
+images[21] = "img21.png";
+images[22] = "img22.png";
+images[23] = "img23.png";
+images[24] = "img24.png";
+images[25] = "img25.png";
+images[26] = "img26.png";
+images[27] = "img27.png";
+images[28] = "img28.png";
+images[29] = "img29.png";
+images[30] = "img30.png";
+images[31] = "img31.png";
+images[32] = "img32.png";
+images[33] = "img33.png";
+images[34] = "img34.png";
+images[35] = "img35.png";
+images[36] = "img36.png";
+
+ var images1= new Array()
+ images1[0]="img1_1.png";
+ images1[1]="img1_2.png";
+
+
+var x=0,l=0;
+var rand_var,k,m=0,my_var;
+     function changeImage()
+     {
+        document.getElementById("img").src=images[x]
+        x++;
+        if(x>=36)
+    {
+        x=0;k
+        rand();
+        clearInterval(my_var);
+    }
+     }
+    function rand()
+    {
+   rand_var=Math.floor((Math.random()*10)+1);
+   if(rand_var>=0&&rand_var<=5)
+   {
+      document.getElementById("img").src = images1[0]
+  }
+   else 
+   {
+    document.getElementById("img").src = images1[1]
+   }
+   }  
+   function call()
+   {
+        my_var=setInterval("changeImage()", 10);
+     }
+     function foo(obj)
+     {
+      obj.disabled=true;
+      setTimeout(
+        function()
+        {
+          obj.disabled=false;
+        },400);
+      call();
+     }
+
+ var bgimages=new Array()
+bgimages[0]="bgimg1.jpg"
+bgimages[1]="bgimg2.jpg"
+bgimages[2]="bgimg3.jpg"
+bgimages[3]="bgimg4.jpg"
+bgimages[4]="bgimg5.jpg"
+bgimages[5]="bgimg6.jpg"
+bgimages[6]="bgimg7.jpg"
+bgimages[7]="bgimg8.jpg"
+bgimages[8]="bgimg9.jpg"
+bgimages[9]="bgimg10.jpg"
+bgimages[10]="bgimg11.jpg"
+bgimages[11]="bgimg12.jpg"
+bgimages[12]="bgimg13.jpg"
+bgimages[13]="bgimg14.jpg"
+bgimages[14]="bgimg15.jpg"
+bgimages[15]="bgimg16.jpg"
+bgimages[16]="bgimg17.jpg"
+bgimages[17]="bgimg18.jpg"
+bgimages[18]="bgimg19.jpg"
+bgimages[19]="bgimg20.jpg"
+//preload images
+
+var pathToImg=new Array()
+for (i=0;i<bgimages.length;i++){
+pathToImg[i]=new Image()
+pathToImg[i].src=bgimages[i]
+}
+
+var inc=-1
+
+function bgSlide(){
+if (inc<bgimages.length-1)
+inc++
+
+else
+inc=0
+document.body.background=pathToImg[inc].src
+}
+
+if (document.all||document.getElementById)
+window.onload=new Function(setInterval("bgSlide()",10000))
+
+ </script>
+
+ </body>
+ </html>
